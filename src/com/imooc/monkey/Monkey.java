@@ -32,5 +32,4 @@ public class Monkey {
 		this.feature = feature;
 	}
 	
-	
 }
