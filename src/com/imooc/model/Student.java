@@ -20,6 +20,15 @@ public class Student {
 		this.setStudentAge(studentAge);
 		this.setStudentSex(studentSex);
 	}
+	
+	// 实现全局
+	public Student(String studentNo, String studentName, String studentSex, int studentAge,Subject sub) {
+		this.setStudentNo(studentNo);
+		this.setStudentName(studentName);
+		this.setStudentAge(studentAge);
+		this.setStudentSex(studentSex);
+		this.setStudentSubject(sub);
+	}
 
 	// getter && setter
 	
@@ -78,7 +87,7 @@ public class Student {
 	 */
 	public String introduction() {
 		String str = "学生信息如下： \n姓名：" + this.getStudentName() + "\n学号:" + this.getStudentNo() + "\n性别："
-				+ this.getStudentSex() + "\n年龄：" + this.getStudentAge();
+				+ this.getStudentSex() + "\n年龄：" + this.getStudentAge()+"\n学科："+this.getStudentSubject().getSubjectName()+"\n学时："+this.getStudentSubject().getSubjectLife();
 		return str;
 	}
 
