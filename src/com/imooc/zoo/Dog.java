@@ -19,4 +19,9 @@ public class Dog extends Animal {
 	public void sleep() {
 		System.out.println(this.getName()+"现在"+this.getMonth()+"个月大，它在睡觉");
 	}
+	
+	//子类重写父类的方法
+	public void eat() {
+		System.out.println(this.getName()+"现在没有食欲");
+	}
 }

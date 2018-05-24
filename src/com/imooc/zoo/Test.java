@@ -16,5 +16,4 @@ public class Test {
 		two.eat();
 		two.sleep();
 	}
-
 }
