@@ -4,6 +4,7 @@ public class Cat extends Animal {
 
 	private double weight; //体重
 	
+	public static int st3 = 44;
 	//构造函数
 	public Cat() {
 		

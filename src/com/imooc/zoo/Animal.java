@@ -5,6 +5,18 @@ public class Animal {
 	private int month;
 	private String species;
 	
+	// 静态成员属性
+	private static int st1 = 22;
+	private static int st2 = 23;
+
+	static {
+		System.out.println("我是父类的静态代码块");
+	}
+	
+	{
+		System.out.println("我是父类的构造代码块");
+	}
+	
 	//无参构造
 	public Animal() {
 		
