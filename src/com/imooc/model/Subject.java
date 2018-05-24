@@ -99,6 +99,7 @@ public class Subject {
 	public void addStudent(Student stu) {
 		for(int i=0;i<this.getMyStudents().length;i++) {
 			if(this.getMyStudents()[i]==null) {
+				stu.setStudentSubject(this);
 				this.getMyStudents()[i]=stu;
 				//2、将学生数量存在studentNum中
 				this.setStudentNum(i+1);
