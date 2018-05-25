@@ -23,5 +23,10 @@ public class Cat extends Animal {
 		System.out.println(this.getName()+"是一只"+this.getSpecies()+"，它在快乐的奔跑");
 	}
 	
+	@Override // override的意思是标识下方的方法是方法重写； 它是个注解； 
+	public void eat() {
+		// TODO Auto-generated method stub
+		super.eat();
+	}
 	
 }
