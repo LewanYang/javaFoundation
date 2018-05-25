@@ -49,4 +49,16 @@ public class Animal {
 	public void eat() {
 		System.out.println("动物吃东西");
 	}
+	
+	public boolean equals(Object obj) {
+		if(obj == null) {
+			return false;
+		}
+		Animal temp = (Animal)obj; //这个是类型的转换；
+		if((this.getName().equals(temp.getName()))&&(this.getMonth()==temp.getMonth())) {
+			return true;
+		}else {
+			return false;
+		}
+	}
 }

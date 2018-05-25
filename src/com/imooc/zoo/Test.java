@@ -15,5 +15,10 @@ public class Test {
 		two.setMonth(1);
 		two.eat();
 		two.sleep();
+		/**
+		 * toString·½·¨
+		 */
+		System.out.println(one.toString());
+		System.out.println(one);
 	}
 }
