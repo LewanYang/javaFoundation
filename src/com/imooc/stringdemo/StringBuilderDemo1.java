@@ -10,5 +10,15 @@ public class StringBuilderDemo1 {
 		str.append(",");
 		str.append("imooc");
 		System.out.println("str="+str);
+		
+		//改成iMOOC\
+		//方法一：
+		System.out.println("替换后："+str.delete(4, 8).insert(4, "MOOC"));
+		//方法二：
+		System.out.println(str.replace(4, 8, "MOOC"));
+		
+		//在字符串中'你好，iMOOC'中取出'你好'并输出
+		System.out.println(str.substring(0,2));
+		
 	}
 }
