@@ -38,6 +38,32 @@ public class Cat {
 	public String toString() {
 		return "[name=" + name + ", month=" + month + ", species=" + species + "]";
 	}
+
+	//hashCode and equals
+	@Override
+	public int hashCode() {
+		final int prime = 31;
+		int result = 1;
+		result = prime * result + month;
+		result = prime * result + ((name == null) ? 0 : name.hashCode());
+		result = prime * result + ((species == null) ? 0 : species.hashCode());
+		return result;
+	}
+
+	@Override
+	//判断是否相等
+	public boolean equals(Object obj) {
+		//先判断对象是否相等,相等返回true
+		if(this==obj) {
+			return true;
+		}
+		//判断obj内的内容是否相等
+		if(obj.getClass()==Cat.class) {
+			Cat cat = (Cat)obj;
+			return cat.getName().equals(name)&&cat.getMonth()==month&&cat.getSpecies().equals(species);
+		}
+		return false;
+	}
 	
 	
 	
